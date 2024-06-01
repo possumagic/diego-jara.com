@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Formulario de Compra</title>
+    <script>
+        function enviarCompra() {
+            alert("¡Pedido enviado!");
+            document.body.style.backgroundColor = "lightgreen";
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h2>Formulario de Compra</h2>
+    <a href="diego_jara_beltran.html"><h2>Regresar</h2></a>
+
+    <form onsubmit="return enviarCompra()">
+        <p>Seleccione el broche que desea comprar:</p>
+        <select name="broche">
+            <option value="broche1">Broche Floral</option>
+            <option value="broche2">Diademas con Cuentas</option>
+            <option value="broche3">Horquillas Brillantes</option>
+            <option value="broche4">Coleteros de Terciopelo</option>
+            <option value="broche5">Lazos de Cinta</option>
+            <option value="broche6">Ligas Metálicas</option>
+            <option value="broche7">Pines de Perlas</option>
+            <option value="broche8">Clips de Mariposa</option>
+            <option value="broche9">Diademas de Tela</option>
+            <option value="broche10">Broches Vintage</option>
+        </select>
+        <br><br>
+        <p>Ingrese sus datos:</p>
+        <p>Nombre:</p>
+        <input type="text" name="nombre"><br>
+        <p>Dirección de Envío:</p>
+        <input type="text" name="direccion"><br>
+        <p>Método de Pago:</p>
+        <select name="metodo_pago">
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="paypal">PayPal</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+        </select>
+        <br><br>
+       <input type="submit" value="Realizar Pedido">
+    </form>
+</body>
+</html>

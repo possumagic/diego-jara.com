@@ -1,0 +1,31 @@
+<html>
+
+
+ <title>Formulario Básico</title>
+    <script>
+        function enviarFormulario() {
+            alert("¡Enviado!");
+                        document.body.style.backgroundColor = "lightgreen";
+                        return false;
+
+
+        }
+    </script>
+</head>
+<h2>Formulario de Contacto</h2>
+        <a href="diego_jara_beltran.html"><h2>Regresar</h2></a>
+
+    <form onsubmit="return enviarFormulario()">
+        Nombre: <input type="text" name="nombre"><br>
+        Correo Electrónico: <input type="email" name="email"><br>
+        <p>Preguntas y sugerencias:</p>
+- ¿Qué tipo de broches de cabello te gustaría ver en nuestra tienda?
+- ¿Tienes alguna preferencia en cuanto a colores o materiales para los broches?
+- ¿Qué tipo de ocasiones crees que serían ideales para usar broches de cabello?
+- ¿Hay algún estilo de broches que hayas visto en otros lugares y te gustaría que ofreciéramos?
+        <input type="text" name="sugerencias">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
